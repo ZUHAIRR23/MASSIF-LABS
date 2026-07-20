@@ -9,12 +9,12 @@ export function initContactForm() {
         // Show submitting state
         statusMsg.className = 'form-status';
         statusMsg.style.display = 'block';
-        statusMsg.textContent = 'TRANSMITTING ENQUIRY DATA DIRECTIVE...';
+        statusMsg.textContent = 'MENGIRIM DIREKTIF DATA PERTANYAAN...';
 
         setTimeout(() => {
             // Simulate successful validation encryption transmit
             statusMsg.classList.add('success');
-            statusMsg.textContent = 'TRANSMISSION RECEIVED. PROTOCOL ENGAGED.';
+            statusMsg.textContent = 'TRANSMISI DITERIMA. PROTOKOL DIMULAI.';
             form.reset();
 
             // Reset selection label

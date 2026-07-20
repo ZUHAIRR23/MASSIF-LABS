@@ -19,21 +19,21 @@ export function initServicesAccordion() {
         const integrity = row.getAttribute('data-integrity');
         const progress = row.getAttribute('data-progress');
 
-        if (hudStatus) hudStatus.innerHTML = `ACTIVE // PHASE_${idx}`;
+        if (hudStatus) hudStatus.innerHTML = `AKTIF // FASE_${idx}`;
         if (hudMaterial) hudMaterial.textContent = material;
         if (hudTolerance) hudTolerance.textContent = tolerance;
         if (hudIntegrity) hudIntegrity.textContent = integrity;
         if (hudProgressBar) hudProgressBar.style.width = `${progress}%`;
-        if (hudProgressVal) hudProgressVal.textContent = `${progress}% READY`;
+        if (hudProgressVal) hudProgressVal.textContent = `${progress}% SIAP`;
     }
 
     function resetHUDToIdle() {
-        if (hudStatus) hudStatus.innerHTML = `IDLE // WATCHING`;
-        if (hudMaterial) hudMaterial.textContent = 'NONE SELECTED';
+        if (hudStatus) hudStatus.innerHTML = `STANDBY // MEMANTAU`;
+        if (hudMaterial) hudMaterial.textContent = 'TIDAK ADA YANG DIPILIH';
         if (hudTolerance) hudTolerance.textContent = '--';
-        if (hudIntegrity) hudIntegrity.textContent = '100% SECURE';
+        if (hudIntegrity) hudIntegrity.textContent = '100% AMAN';
         if (hudProgressBar) hudProgressBar.style.width = '0%';
-        if (hudProgressVal) hudProgressVal.textContent = '00% READY';
+        if (hudProgressVal) hudProgressVal.textContent = '00% SIAP';
     }
 
     rows.forEach(row => {
