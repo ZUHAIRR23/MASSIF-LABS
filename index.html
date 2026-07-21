@@ -59,6 +59,7 @@
         <a href="#gallery-section" class="nav-link">GALERI</a>
         <a href="#blueprint-section" class="nav-link">LABORATORIUM</a>
         <a href="#services-section" class="nav-link">LAYANAN</a>
+        <a href="#studios-section" class="nav-link">STUDIO</a>
         <a href="#contact-section" class="nav-link">KONTAK</a>
       </nav>
       <div class="header-action">TOKO TERKURASI</div>
@@ -68,6 +69,10 @@
       <!-- Section 1: Hero Section -->
       <section id="hero-section" class="section">
         <div class="hero-bg-blueprint"></div>
+        <!-- Floating wireframe drawing asset -->
+        <div class="hero-graphic-overlay">
+          <img src="/src/assets/hero.png" alt="Furniture Geometry Schematic" class="hero-graphic-img">
+        </div>
         <!-- Interactive radial cursor spotlight glow -->
         <div class="hero-glow" id="hero-interactive-glow"></div>
         <div class="hero-title-container">
@@ -242,7 +247,7 @@
         <div class="gallery-grid">
           <div class="gallery-item-card">
             <div class="gallery-img-wrapper">
-              <img src="/src/assets/item1.png" alt="Detailing Konsol Brutalist" class="gallery-img">
+              <img src="/src/assets/gallery_item1.png" alt="Detailing Konsol Brutalist" class="gallery-img">
               <div class="gallery-img-overlay">
                 <span>LIHAT SPESIFIKASI</span>
               </div>
@@ -254,7 +259,7 @@
           </div>
           <div class="gallery-item-card">
             <div class="gallery-img-wrapper">
-              <img src="/src/assets/item2.png" alt="Profil Kursi Oblique" class="gallery-img">
+              <img src="/src/assets/gallery_item2.png" alt="Profil Kursi Oblique" class="gallery-img">
               <div class="gallery-img-overlay">
                 <span>LIHAT SPESIFIKASI</span>
               </div>
@@ -266,7 +271,7 @@
           </div>
           <div class="gallery-item-card">
             <div class="gallery-img-wrapper">
-              <img src="/src/assets/item3.png" alt="Karya Kaca Vapor Monolith" class="gallery-img">
+              <img src="/src/assets/gallery_item3.png" alt="Karya Kaca Vapor Monolith" class="gallery-img">
               <div class="gallery-img-overlay">
                 <span>LIHAT SPESIFIKASI</span>
               </div>
@@ -278,7 +283,7 @@
           </div>
           <div class="gallery-item-card">
             <div class="gallery-img-wrapper">
-              <img src="/src/assets/item4.png" alt="Tekstur Permukaan Travertine" class="gallery-img">
+              <img src="/src/assets/gallery_item4.png" alt="Tekstur Permukaan Travertine" class="gallery-img">
               <div class="gallery-img-overlay">
                 <span>LIHAT SPESIFIKASI</span>
               </div>
@@ -465,6 +470,60 @@
           </div>
         </div>
       </section>
+
+      <!-- Section 5.5: Showroom Studios Section -->
+      <section id="studios-section" class="section">
+        <div class="section-badge font-mono">BAGIAN 05.5 / KOORDINAT SPASIAL // STUDIOS</div>
+        <div class="studios-header">
+          <h2 class="studios-title font-serif">KANTOR PERWAKILAN</h2>
+          <p class="studios-subtitle">Studio kurasi fisik kami, di mana material dapat disentuh dan mekanika dapat dinilai secara langsung.</p>
+        </div>
+        
+        <div class="studios-grid">
+          <div class="studio-card">
+            <div class="studio-img-wrapper">
+              <img src="/src/assets/studio_jakarta.png" alt="MASSIF LABS Jakarta Studio" class="studio-img" />
+              <div class="studio-time-overlay font-mono">
+                <span class="time-lbl">LOKAL_WAKTU</span>
+                <span class="studio-clock" data-timezone="Asia/Jakarta">00:00:00</span>
+              </div>
+            </div>
+            <div class="studio-meta">
+              <h3 class="studio-name font-serif">JAKARTA</h3>
+              <span class="studio-coords font-mono">6.2088° S, 106.8456° E</span>
+            </div>
+          </div>
+          
+          <div class="studio-card">
+            <div class="studio-img-wrapper">
+              <img src="/src/assets/studio_milano.png" alt="MASSIF LABS Milano Studio" class="studio-img" />
+              <div class="studio-time-overlay font-mono">
+                <span class="time-lbl">LOKAL_WAKTU</span>
+                <span class="studio-clock" data-timezone="Europe/Rome">00:00:00</span>
+              </div>
+            </div>
+            <div class="studio-meta">
+              <h3 class="studio-name font-serif">MILANO</h3>
+              <span class="studio-coords font-mono">45.4642° N, 9.1900° E</span>
+            </div>
+          </div>
+          
+          <div class="studio-card">
+            <div class="studio-img-wrapper">
+              <img src="/src/assets/studio_tokyo.png" alt="MASSIF LABS Tokyo Studio" class="studio-img" />
+              <div class="studio-time-overlay font-mono">
+                <span class="time-lbl">LOKAL_WAKTU</span>
+                <span class="studio-clock" data-timezone="Asia/Tokyo">00:00:00</span>
+              </div>
+            </div>
+            <div class="studio-meta">
+              <h3 class="studio-name font-serif">TOKYO</h3>
+              <span class="studio-coords font-mono">35.6764° N, 139.6500° E</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Section 6.5: Action Directive (CTA) -->
       <section class="section-cta">
         <div class="cta-outline-pattern"></div>
@@ -577,6 +636,34 @@
         </div>
       </footer>
     </div>
+
+    <!-- Sidebar Spesifikasi -->
+    <div id="spec-sidebar-overlay" class="spec-sidebar-overlay"></div>
+    <aside id="spec-sidebar" class="spec-sidebar">
+      <div class="spec-sidebar-header">
+        <span class="spec-sidebar-tag font-mono">ARSIP_SPESIFIKASI // EXH_REF</span>
+        <button id="spec-sidebar-close" class="spec-sidebar-close-btn" aria-label="Close Specs">
+          <span>TUTUP</span>
+          <span class="close-arrow">→</span>
+        </button>
+      </div>
+      <div class="spec-sidebar-content-wrapper">
+        <div class="spec-sidebar-visual-container">
+          <img id="spec-sidebar-img" class="spec-sidebar-img" src="" alt="">
+        </div>
+        <div class="spec-sidebar-meta">
+          <span id="spec-sidebar-ref" class="spec-sidebar-ref font-mono"></span>
+          <h2 id="spec-sidebar-title" class="spec-sidebar-title font-serif"></h2>
+          <p id="spec-sidebar-desc" class="spec-sidebar-desc"></p>
+        </div>
+        <div class="spec-sidebar-details">
+          <h4 class="spec-details-header font-mono">LEMBAR DATA SPEK</h4>
+          <div id="spec-sidebar-table" class="spec-sidebar-table font-mono">
+            <!-- Dynamic specs table rows -->
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <!-- Script Entry Point -->
     <script type="module" src="/src/main.js"></script>

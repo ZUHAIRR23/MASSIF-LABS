@@ -9,6 +9,8 @@ import { setupNavigation } from './navigation.js';
 import { initHeroGlow, initDynamicHUD } from './hero-hud.js';
 import { initBackgroundParticles } from './particles.js';
 import { initServicesAccordion } from './services.js';
+import { initGallerySidebar } from './gallery.js';
+import { initStudioClocks } from './studios.js';
 import { initContactForm } from './contact.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -43,6 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 10. INITIALIZE REDESIGNED SERVICES ACCORDION
     initServicesAccordion();
+
+    // 10.5. INITIALIZE GALLERY SIDEBAR SPECIFICATIONS
+    initGallerySidebar();
+
+    // 10.7. INITIALIZE SHOWROOM STUDIO CLOCKS
+    initStudioClocks();
 
     // 11. INITIALIZE CONTACT FORM
     initContactForm();
